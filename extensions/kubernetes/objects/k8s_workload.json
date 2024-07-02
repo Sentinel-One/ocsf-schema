@@ -33,9 +33,6 @@
             "caption": "Workload Type ID",
             "description": "The normalized identifier for the workload.",
             "enum": {
-                "0": {
-                    "caption": "Unknown"
-                },
                 "1": {
                     "caption": "Pod"
                 },

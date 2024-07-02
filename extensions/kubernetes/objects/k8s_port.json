@@ -28,6 +28,9 @@
         },
         "2": {
           "caption": "UDP"
+        },
+        "3": {
+          "caption": "SCTP"
         }
       },
       "requirement": "required"

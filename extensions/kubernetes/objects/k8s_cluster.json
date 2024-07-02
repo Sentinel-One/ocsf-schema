@@ -6,9 +6,9 @@
         "cluster_uid": {
             "requirement": "required"
         },
-        "k8s_metadata": {
-            "caption": "Kubernetes metadata.",
-            "requirement": "required"
+        "selector_labels": {
+            "caption": "Cluster labels.",
+            "requirement": "optional"
         }
     }
 }

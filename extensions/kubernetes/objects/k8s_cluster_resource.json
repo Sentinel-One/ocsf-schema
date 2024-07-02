@@ -59,6 +59,9 @@
                 },
                 "11": {
                     "caption": "ClusterCIDR v1alpha1"
+                },
+                "99": {
+                    "caption": "Other"
                 }
             },
             "requirement": "required"
