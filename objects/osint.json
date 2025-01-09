@@ -116,6 +116,9 @@
 			"requirement":"recommended",
       "type":"string_t"
     },
+    "campaign": {
+      "requirement": "optional"
+    },
     "confidence_id":{
       "description":"The normalized confidence refers to the accuracy of collected information related to the OSINT or how pertinent an indicator or analysis is to a specific event or finding. A low confidence means that the information collected or analysis conducted lacked detail or is not accurate enough to qualify an indicator as fully malicious.",
       "requirement":"recommended"
