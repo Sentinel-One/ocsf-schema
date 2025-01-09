@@ -119,6 +119,10 @@
     "campaign": {
       "requirement": "optional"
     },
+    "category": {
+      "description": "Categorizes the threat indicator based on its functional or operational role.",
+      "requirement": "optional"
+    },
     "confidence_id":{
       "description":"The normalized confidence refers to the accuracy of collected information related to the OSINT or how pertinent an indicator or analysis is to a specific event or finding. A low confidence means that the information collected or analysis conducted lacked detail or is not accurate enough to qualify an indicator as fully malicious.",
       "requirement":"recommended"
@@ -126,6 +130,32 @@
     "confidence":{
       "description":"The confidence of an indicator being malicious and/or pertinent, normalized to the caption of the confidence_id value. In the case of 'Other', it is defined by the event source or analyst.",
       "requirement":"optional"
+    },
+    "created_time": {
+      "description": "The timestamp when the indicator was initially created or identified.",
+      "requirement": "optional"
+    },
+    "creator": {
+      "description": "The identifier of the user, system, or organization that contributed the indicator.",
+      "requirement": "optional"
+    },
+    "desc": {
+      "description": "A detailed explanation of the indicator, including its context, purpose, and relevance.",
+      "requirement": "optional"
+    },
+    "external_id": {
+      "requirement": "optional"
+    },
+    "labels": {
+      "description": "Tags or keywords associated with the indicator to enhance searchability.",
+      "requirement": "optional"
+    },
+    "malware": {
+      "requirement": "optional"
+    },
+    "modified_time": {
+      "description": "The timestamp of the last modification or update to the indicator.",
+      "requirement": "optional"
     },
     "vendor_name":{
       "description":"The vendor name of a tool which generates intelligence or provides indicators.",
@@ -141,7 +171,13 @@
       "requirement":"optional"
     },
     "detection_pattern":{
-      "description": "Specifies the type of detection pattern used to identify the associated threat indicator. This field identifies whether the pattern is based on behavioral analysis, static indicators, or heuristic methods.",
+      "description": "The specific detection pattern or signature associated with the indicator.",
+      "requirement": "optional"
+    },
+    "detection_pattern_type": {
+      "requirement": "optional"
+    },
+    "detection_pattern_type_id": {
       "requirement": "optional"
     },
     "email":{

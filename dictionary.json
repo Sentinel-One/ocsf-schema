@@ -1502,6 +1502,36 @@
       "description": "Specific pattern, algorithm, fingerprint, or model used for detection.",
       "type": "string_t"
     },
+    "detection_pattern_type": {
+      "caption": "Detection Pattern",
+      "description": "Specifies the type of detection pattern used to identify the associated threat indicator. This field identifies whether the pattern is based on behavioral analysis, static indicators, or heuristic methods.",
+      "type": "string_t"
+    },
+    "detection_pattern_type_id": {
+      "caption": "Detection Pattern Type ID",
+      "description": "The normalised identifier of the detection pattern type.",
+      "sibling": "detection_pattern_type",
+      "type": "integer_t",
+      "enum": {
+        "0": {
+          "caption": "Unknown",
+          "description": "The type is not mapped."
+        },
+        "1": {
+          "caption": "Behavioral analysis"
+        },
+        "2": {
+          "caption": "Static indicators"
+        },
+        "3": {
+          "caption": "Heuristic methods"
+        },
+        "99": {
+          "caption": "Other",
+          "description": "Any other type of detection pattern type."
+        }
+      }
+    },
     "detection_system": {
       "caption": "Detection System",
       "description": "The name of the type of data security tool or system that the finding, detection, or alert originated from. E.g., Endpoint, Secure Email Gateway, etc.",
@@ -2109,6 +2139,11 @@
       "description": "The schema extensions used to create the event.",
       "type": "extension",
       "is_array": true
+    },
+    "external_id": {
+      "caption": "External ID",
+      "description": "A unique identifier assigned by an external system for cross-referencing.",
+      "type": "string_t"
     },
     "factor_type": {
       "caption": "Factor Type",
