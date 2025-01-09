@@ -140,6 +140,10 @@
       "description":"Analyst commentary or source commentary about an indicator or OSINT analysis.",
       "requirement":"optional"
     },
+    "detection_pattern":{
+      "description": "Specifies the type of detection pattern used to identify the associated threat indicator. This field identifies whether the pattern is based on behavioral analysis, static indicators, or heuristic methods.",
+      "requirement": "optional"
+    },
     "email":{
       "caption":"Related Email",
       "description":"Any email information pertinent to an indicator or OSINT analysis.",
@@ -149,6 +153,9 @@
       "caption":"Related Email Authentication",
       "description":"Any email authentication information pertinent to an indicator or OSINT analysis.",
       "requirement":"optional"
+    },
+    "intrusion_sets": {
+      "requirement": "optional"
     },
     "kill_chain":{
       "description":"Lockheed Martin Kill Chain Phases pertinent to an indicator or OSINT analysis.",
@@ -195,6 +202,10 @@
       "description":"Any pertinent file information related to an indicator or OSINT analysis.",
       "requirement":"optional"
     },
+    "risk_score":{
+      "description":"A numerical representation of the threat indicator’s risk or confidence level.",
+      "requirement":"optional"
+    },
     "related_analytics": {
       "caption": "Related Analytics",
       "description": "Any analytics related to an indicator or OSINT analysis.",
@@ -202,6 +213,13 @@
     },
     "reputation":{
       "description":"Related reputational analysis from third-party engines and analysts for a given indicator or OSINT analysis.",
+      "requirement":"optional"
+    },
+    "uploaded_time":{
+      "requirement":"optional"
+    },
+    "severity":{
+      "description":"Represents the severity level of the threat indicator, typically reflecting its potential impact or damage.",
       "requirement":"optional"
     },
     "subnet":{
@@ -212,6 +230,9 @@
     "script":{
       "caption":"Related Script Data",
       "description":"Any pertinent script information related to an indicator or OSINT analysis.",
+      "requirement":"optional"
+    },
+    "threat_actor":{
       "requirement":"optional"
     }
   }

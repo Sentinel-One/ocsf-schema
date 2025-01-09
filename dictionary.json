@@ -2518,6 +2518,12 @@
       "description": "The impact of the finding, valid range 0-100.",
       "type": "integer_t"
     },
+    "intrusion_sets": {
+      "caption": "Intrusion Sets",
+      "description": "A grouping of adversarial behaviors and resources believed to be associated with specific threat actors or campaigns. Intrusion sets often encompass multiple campaigns and are used to organize related activities under a common label.",
+      "type": "string_t",
+      "is_array": true
+    },
     "injection_type": {
       "caption": "Injection Type",
       "description": "The process injection method, normalized to the caption of the injection_type_id value. In the case of 'Other', it is defined by the event source.",
@@ -5132,6 +5138,11 @@
       "description": "The tree id is a unique SMB identifier which represents an open connection to a share.",
       "type": "string_t"
     },
+    "threat_actor": {
+      "caption": "Threat Actor",
+      "description": "The Threat Actor object describes the characteristics and metadata of a threat actor.",
+      "type": "threat_actor"
+    },
     "ttl": {
       "caption": "TTL",
       "description": "The time interval that the resource record may be cached. Zero value means that the resource record can only be used for the transaction in progress, and should not be cached.",
@@ -5225,6 +5236,11 @@
       "caption": "Untruncated Size",
       "description": "The size in bytes of an attribute before truncation. See specific usage.",
       "type": "integer_t"
+    },
+    "uploaded_time": {
+      "caption": "Uploaded Time",
+      "description": "The timestamp indicating when the associated indicator or intelligence was added to the system or repository.",
+      "type": "timestamp_t"
     },
     "url": {
       "caption": "URL",

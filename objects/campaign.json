@@ -5,6 +5,7 @@
   "name": "campaign",
   "attributes": {
     "name": {
+      "description": "The name of a specific campaign associated with a cyber threat.",
       "requirement": "optional"
     }
   }
