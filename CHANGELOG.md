@@ -80,6 +80,10 @@ Thankyou! -->
     1. Added `os_machine_uuid` as a `uuid_t`.  #1268
     1. Added `sbom`, `author`, `related_component`, `relationship`, `relationship_id` and `software_component` to support SBOMs. #1262
     1. Added `related_events_count` as an `int_t`. #1271
+    1. Added `detection_pattern_type` an `detection_pattern_type_id` as a `string_t` and `int_t` respectively. #1310
+    1. Added `external_id` as an `string_t`. #1310
+    1. Added `intrusion_sets` as an array `string_t`. #1310
+    1. Added `uploaded_time` as an `timestamp_t`. #1310
 * #### Objects
     1. Added `environment_variable` object. #1172, #1288
     1. Added `advisory` object. #1176
@@ -94,6 +98,8 @@ Thankyou! -->
     1. Added `software_component` and `sbom` objects. #1262
     1. Added `drive_type` and `drive_type_id` objects. #1287
     1. Added `cpu_architecture` and `cpu_architecture_id` objects. #1278
+    1. Added `camapign` object #1310
+    1. Added `threat_actor` object #1310
 * ### Profiles
     1. Added `incident` profile. #1293
 
@@ -169,6 +175,7 @@ Thankyou! -->
     1. Added `cpu_architecture` and `cpu_architecture_id` to `device_hw_info` object. #1278
     1. Added `name` to `script` object. #1284
     1. Relax requirement of `fingerprints` in `certificate` object. #1302
+    1. Added `campaign`, `category`, `created_time`, `creator`, `desc`, `expiration_time`, `external_id`, `labels`, `malware`, `modified_time`, `name`, `detection_pattern`, `detection_pattern_type`, `detection_pattern_type_id`, `intrusion_sets`, `risk_score`, `references`, `uploaded_time`, `severity`, `uid` and `threat_actor` to `osint` object. #1310
 
 
 ### Bugfixes
