@@ -143,6 +143,10 @@
       "description": "A detailed explanation of the indicator, including its context, purpose, and relevance.",
       "requirement": "optional"
     },
+    "expiration_time": {
+      "description": "The expiration date of the indicator, after which it is no longer considered reliable.",
+      "requirement": "optional"
+    },
     "external_id": {
       "requirement": "optional"
     },
@@ -155,6 +159,10 @@
     },
     "modified_time": {
       "description": "The timestamp of the last modification or update to the indicator.",
+      "requirement": "optional"
+    },
+    "name": {
+      "description": "Specifies the field(s) in logs or datasets where this indicator is expected to match.",
       "requirement": "optional"
     },
     "vendor_name":{
@@ -242,6 +250,10 @@
       "description":"A numerical representation of the threat indicator’s risk or confidence level.",
       "requirement":"optional"
     },
+    "references": {
+      "description": "Provides a reference to an external source of information related to the CTI being represented. This may include a URL, a document, or some other type of reference that provides additional context or information about the CTI.",
+      "requirement": "optional"
+    },
     "related_analytics": {
       "caption": "Related Analytics",
       "description": "Any analytics related to an indicator or OSINT analysis.",
@@ -267,6 +279,10 @@
       "caption":"Related Script Data",
       "description":"Any pertinent script information related to an indicator or OSINT analysis.",
       "requirement":"optional"
+    },
+    "uid": {
+      "description": "The unique identifier for the OSINT object.",
+      "requirement": "optional"
     },
     "threat_actor":{
       "requirement":"optional"
