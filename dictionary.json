@@ -491,6 +491,11 @@
       "type": "string_t",
       "is_array": true
     },
+    "campaign": {
+      "caption": "Campaign",
+      "description": "The campaign object describes details about the campaign that was the source of the activity.",
+      "type": "campaign"
+    },
     "caption": {
       "caption": "Caption",
       "description": "A short description or caption of the device. For example: <code>Scanner 1</code> or <code>Database Manager</code>.",
