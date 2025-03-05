@@ -62,7 +62,7 @@ Thankyou! -->
 * #### Objects
   1. Added `assessment` object to capture evaluations/assessments of configurations/signals. #1343
   1. Added `node`, `edge`, `graph` objects. #1343
-  1. Added `camapign` object #1310
+  1. Added `campaign` object #1310
   1. Added `threat_actor` object #1310
 	
 ### Improved
