@@ -85,7 +85,7 @@ Thankyou! -->
   1. Reduced requirement of `standards` to recommended in the `compliance` object. #1352
   1. Updated MITRE `attack`, `tactic`, `technique`, `subtechnique` captions, descriptions, references to include MITRE ATLAS. Used standard requirements for `_entity` extended objects. #1355.
   1. Added `name`, `resources`, `uid`, `verdict`, and `verdict_id` to `evidences`. #1337
-  1. Added `campaign`, `category`, `created_time`, `creator`, `desc`, `expiration_time`, `external_id`, `labels`, `malware`, `modified_time`, `name`, `detection_pattern`, `detection_pattern_type`, `detection_pattern_type_id`, `intrusion_sets`, `risk_score`, `references`, `uploaded_time`, `severity`, `uid` and `threat_actor` to `osint` object. #1310
+  1. Added `campaign`, `category`, `created_time`, `creator`, `desc`, `expiration_time`, `external_id`, `labels`, `malware`, `modified_time`, `name`, `detection_pattern`, `detection_pattern_type`, `detection_pattern_type_id`, `intrusion_sets`, `risk_score`, `references`, `uploaded_time`, `severity`, `severity_id`, `uid` and `threat_actor` to `osint` object. #1310
 
 ### Deprecated
   1. Deprecated usage of `isp` attribute in the `location` object. #1351
